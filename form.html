@@ -1,0 +1,149 @@
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.container {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f2f2f2;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+input {
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: none;
+}
+
+button {
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: #4CAF50;
+	color: white;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #3e8e41;
+}
+</style>
+</head>
+<body>
+
+	<title>Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Registration Form</h1>
+		<form>
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" required>
+
+                        <label for="m_gender">Gender:</label><br>
+                        <select id="m_gender" name="gender">
+                        <option value="Select Gender">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other<u></u>
+                        <option></select><br>
+                        <br>
+
+                        
+                        <label for="email">Email</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" required>
+
+			<label for="confirm-password">Confirm Password</label>
+			<input type="password" id="confirm-password" name="confirm-password" required>
+
+                        <label for="Phone no.">Phone No.</label>
+                        <input type="Phone No." id="phone-No." name="phone-no." required>
+
+                        <label for="Zip code">Zip code</label>
+                        <input type="Zip code" id="Zip code" name="Zip Code" required>
+
+                         <label for="About">About</label>
+                        <input type="About" id="About" name="About" required>
+                       
+                       
+
+ <button type="button" onclick="displayalert()">Submit</button>
+
+			
+		</form>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
+
+
+<script>
+
+function displayalert(){
+ var name = document.getElementById("name").value;
+ alert("Your name is;" + name);
+}
+
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
